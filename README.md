@@ -41,6 +41,24 @@
 
 部署完成后，Cloudflare 会提供一个 `*.workers.dev` 或 `*.pages.dev` 的域名。
 
+### 绑定自定义域名
+
+#### Workers 自定义域名
+1. 确保你的域名已经添加到 Cloudflare
+2. 在 Workers & Pages 中选择你的 Worker
+3. 点击 "触发器" 标签
+4. 在 "自定义域" 部分点击 "添加自定义域"
+5. 输入你想要使用的域名（例如：`sub.yourdomain.com`）
+6. 按照提示完成 DNS 记录的配置
+
+#### Pages 自定义域名
+1. 确保你的域名已经添加到 Cloudflare
+2. 在 Pages 项目中点击 "自定义域" 标签
+3. 点击 "设置自定义域"
+4. 输入你想使用的域名
+5. Cloudflare 会自动配置必要的 DNS 记录
+6. 等待 SSL 证书部署完成
+
 ## 使用说明
 
 1. 点击对应协议的按钮（Shadowsocks/Singbox/Clash）
