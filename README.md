@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-这是一个简单的代理订阅管理界面，支持 Shadowsocks、Singbox 和 Clash 三种协议。项目可以使用 Cloudflare Workers 或 Pages 部署，提供了一个美观的用户界面来管理和分发订阅链接。
+这是一个简单的代理订阅管理界面，支持 Shadowsocks、Singbox 和 Clash 三种协议。项目可以使用 Cloudflare Workers 或 Pages 部署，提供了一个美观的用户界面来管理和分发订阅链接。本项目使用 [XyHK-HUC/Colab](https://github.com/XyHK-HUC/Colab) 提供的订阅源。
 
 ### 主要特点
 
@@ -22,8 +22,7 @@
 2. 进入 Workers & Pages
 3. 创建新的 Worker
 4. 复制 `worker.js` 的内容到编辑器中
-5. 修改 `baseUrl` 为你的订阅源地址
-6. 点击 "保存并部署"
+5. 点击 "保存并部署"
 
 ### 方式二：Cloudflare Pages 部署
 
@@ -70,15 +69,16 @@
 
 ### Workers 部署
 - ✅ 支持动态请求处理
-- ✅ 可以自定义订阅源
 - ✅ 适合需要代理或处理请求的场景
+- ✅ 配置简单，无需额外设置
 - ❌ 有每日请求限制（免费版）
 
 ### Pages 部署
 - ✅ 完全免费，无使用限制
 - ✅ 自动构建和部署
 - ✅ 支持自定义域名
-- ❌ 仅支持静态内容
+- ✅ 支持 Functions 动态请求处理
+- ❌ 配置相对复杂
 
 ## 技术栈
 
